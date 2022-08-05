@@ -1,0 +1,70 @@
+body {
+    background-color: #f2f2f2 !important;
+}
+
+.navbar-home {
+    margin-top: -70px;
+    padding: 180px 0px 165px;
+    background-image: url("../img/header-img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-home > h1 {
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    align-items: center;
+}
+
+footer {
+    color: white;
+    font-weight: 600;
+}
+
+.product-image {
+    height: 250px;
+}
+
+.action-button > a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.action-button > a:hover, a:visited:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+.section-product {
+    color: #f2f2f2 !important;
+}
+
+.product-title {
+    text-align: center;
+}
+
+.card-price {
+    margin-top: -8px !important;
+}
+
+.card-image {
+    min-height: 250px;
+    max-height: 250px;
+    background-size: auto ;
+    background-position: 0 -50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-product {
+    border-radius: 10px !important;
+    background-color: #292b2f !important;
+}
+
+.table > thead > tr > th {
+    vertical-align: middle;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
