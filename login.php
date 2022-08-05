@@ -22,20 +22,20 @@
     </main>
         <div class="column my-5">
             <div class="login-logo text-center mb-4">
-                <img src="http://localhost/jwp/templates/img/logo-cat.png" alt="logo" height="100">
+                <img src="http://localhost/jwp/templates/img/logo-user.png" alt="logo" height="100">
             </div>
             <form method="post" class="text-center col-lg-2 col-md-4 col-sm-8 mx-auto w-20">
                 <div class="form-group">
                     <label for="username">NPM</label>
-                    <input type="text" class="form-control text-center" name="npm" placeholder="NPM" required>
+                    <input type="text" class="form-control text-center" name="npm" placeholder="NPM" maxlength="8" required>
                 </div>
                 <div class="form-group">
                     <label for="password">PASSWORD</label>
-                    <input type="password" class="form-control text-center" name="password" placeholder="Password" required>
+                    <input type="password" class="form-control text-center" name="password" placeholder="Password" maxlength="25" required>
                 </div>
                 <input type="submit" class="btn btn-dark" name="login" value="LOGIN">
                 <div class="d-flex justify-content-center links mt-2">
-						Belum punya akun?<a href="register.php" class="ml-1 text-primary">Daftar</a>
+						Belum punya akun?<a href="register.php" class="ml-1 text-info font-weight-normal">Daftar</a>
                 </div>
 
             </form>

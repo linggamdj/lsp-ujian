@@ -6,6 +6,6 @@
     session_unset();
     session_destroy();
 
-    header("Location: login.php");
+    echo "<script>alert('Anda Telah Logout'); window.location.href='http://localhost/jwp'</script>";
     exit;
 ?>

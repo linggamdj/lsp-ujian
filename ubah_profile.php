@@ -58,7 +58,8 @@
     <?php
         // mengecek apakah data berhasil diubah
         if (isset($_POST["update"])) {
-            if (ubahPengguna($_POST) >= 0) {
+            if (ubahProfile($_POST) >= 0) {
+                $_SESSION['nama'] = $_POST['nama'];
                 echo "<script>alert('Data berhasil diubah!'); window.location.href='profile.php'</script>";
             } else {
                 echo "<script>alert('Data gagal diubah!'); window.location.href='profile.php'</script>";

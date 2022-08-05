@@ -40,11 +40,14 @@
                         <div class="col-sm-6 col-md-4 col-lg-3 mx-4 mb-4">
                             <div class="d-flex flex-column text-left mx-auto">
                                 <div class="card card-product mx-auto" style="width: 17rem;">
-                                    <img class="card-image" src="templates/uploads/<?= $data["gambar"] ?>" alt="Card image cap">
+                                    <img class="card-image bg-white p-4" src="templates/img/kursus.png" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title"><?= $data["nama_produk"] ?></h5>
-                                        <h6 class="card-price">Rp<?= number_format($data["harga_produk"], 2) ;?></h5>
-                                        <p class="card-text"><?= $data["deskripsi_produk"] ?></p>
+                                        <h5 class="card-title"><?= $data["nama_kursus"] ?></h5>
+                                        <p class="card-text"><?= $data["deskripsi"] ?></p>
+                                        <p class="card-text text-bold"><?= date("l, d M Y", strtotime($data["waktu_kursus"])) ?></p>
+                                        <?php if ( isset($_SESSION["login"]) ) { ?>
+                                            <a class="btn btn-info text-white mx-auto" href="http://localhost/jwp/mahasiswa/daftar.php?id=<?= $data["id"] ?>">Ikut Kursus</a>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>

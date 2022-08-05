@@ -8,10 +8,13 @@
         exit;
     }
 
+    // assign session npm
     $npm = $_SESSION["npm"];
+
+    // query user by npm
     $user_detail = query("SELECT * FROM user WHERE npm='$npm'")[0];
+
     // var_dump($user_detail);
-    
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +34,7 @@
     </main>
         <section class="d-flex justify-content-center text-center mt-4">
             <div class="card" style="width: 16rem;">
-                <img class="card-img-top img-thumbnail" src="http://localhost/jwp/templates/img/logo-cat.png" alt="Card image cap">
+                <img class="card-img-top img-thumbnail p-5" src="http://localhost/jwp/templates/img/logo-cat.png" alt="Card image cap">
                 <div class="card-body">
                     <p class="card-title text-uppercase"><?= $user_detail["nama"] ?></p>
                     <p class="card-title"><?= $user_detail["npm"] ?></p>
@@ -49,7 +52,7 @@
     <?php
         // mengecek apakah data berhasil diubah
         if (isset($_POST["ubah"])) {
-            if (ubah($_POST) >= 0) {
+            if (ubahProfile($_POST) >= 0) {
                 echo "<script>alert('Data berhasil diubah!'); window.location.href='produk.php'</script>";
             } else {
                 echo "<script>alert('Data gagal diubah!'); window.location.href='produk.php'</script>";

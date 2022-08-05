@@ -22,16 +22,16 @@
     </main>
         <div class="column my-5">
             <div class="login-logo text-center mb-4">
-                <img src="http://localhost/jwp/templates/img/logo-cat.png" alt="logo" height="100">
+                <img src="http://localhost/jwp/templates/img/logo-admin.png" alt="logo" height="100">
             </div>
             <form method="post" class="text-center col-lg-2 col-md-4 col-sm-8 mx-auto w-20">
                 <div class="form-group">
                     <label for="username">USERNAME</label>
-                    <input type="text" class="form-control text-center" name="npm" placeholder="Username" required>
+                    <input type="text" class="form-control text-center" name="npm" placeholder="Username" maxlength="5" required>
                 </div>
                 <div class="form-group">
                     <label for="password">PASSWORD</label>
-                    <input type="password" class="form-control text-center" name="password" placeholder="Password" required>
+                    <input type="password" class="form-control text-center" name="password" placeholder="Password" maxlength="25" required>
                 </div>
                 <input type="submit" class="btn btn-dark" name="login" value="LOGIN">
             </form>
